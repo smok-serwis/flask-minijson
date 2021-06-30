@@ -9,7 +9,8 @@ flask-minijson
 [![PyPI](https://img.shields.io/pypi/implementation/flask-minijson.svg)](https://pypi.python.org/pypi/flask-minijson)
 
 An extension for Flask to allow clients to submit data using the
-application/minijson codec
+[minijson](https://github.com/Dronehub/minijson) codec by providing
+a `Content-Type` header of `application/minijson`.
 
 flask-json is required to be initialized before `FlaskMiniJSON`, in such a way:
 
