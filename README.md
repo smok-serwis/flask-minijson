@@ -8,7 +8,8 @@ flask-minijson
 [![PyPI version](https://badge.fury.io/py/flask-minijson.svg)](https://badge.fury.io/py/flask-minijson)
 [![PyPI](https://img.shields.io/pypi/implementation/flask-minijson.svg)](https://pypi.python.org/pypi/flask-minijson)
 
-An extension for Flask to allow clients to submit data using the application/minijson codec
+An extension for Flask to allow clients to submit data using the
+application/minijson codec
 
 flask-json is required to be initialized before `FlaskMiniJSON`, in such a way:
 
@@ -27,5 +28,6 @@ And you use it like this:
 def endpoint():
     json = request.get_json()
 ```
+
 if normal JSON is passed, it will be recognized. If
-minijson is sent by the client, it will be recognized as well
+minijson is sent by the client, it will be recognized as well.
