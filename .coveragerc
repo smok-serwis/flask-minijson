@@ -1,0 +1,8 @@
+[run]
+branch=1
+source=
+    rapid_minijson
+
+[report]
+exclude_lines=
+    pragma: no cover

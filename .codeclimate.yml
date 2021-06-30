@@ -1,0 +1,33 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        python:
+
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  pep8:
+    enabled: true
+exclude_paths:
+  - tests/**
+  - setup.py
+ratings:
+  paths:
+    - flask_minijson.py
+checks:
+  argument-count:
+    config:
+      threshold: 15
+  method-complexity:
+    config:
+      threshold: 50
+  method-count:
+    config:
+      threshold: 85
+  file-lines:
+    enabled: true
+    config:
+      threshold: 700
