@@ -11,7 +11,7 @@ class MiniJSONRequest(JsonRequest):
         Return JSON data, if content type is application/minijson it will be loaded
         via minijson, else it will be loaded the normal way.
         """
-        if self.headers['Content-Type'] == 'application/minijson':
+        if self.headers.get('Content-Type') == 'application/minijson':
             return minijson.loads(self.get_data())
         else:
             return super().get_json(force, silent, cache)
