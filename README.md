@@ -7,6 +7,8 @@ flask-minijson
 [![PyPI](https://img.shields.io/pypi/pyversions/flask-minijson.svg)](https://pypi.python.org/pypi/flask-minijson)
 [![PyPI version](https://badge.fury.io/py/flask-minijson.svg)](https://badge.fury.io/py/flask-minijson)
 [![PyPI](https://img.shields.io/pypi/implementation/flask-minijson.svg)](https://pypi.python.org/pypi/flask-minijson)
+[![PyPI](https://img.shields.io/pypi/wheel/flask-minijson.svg)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 An extension for Flask to allow clients to submit data using the
 [minijson](https://github.com/Dronehub/minijson) codec by providing
