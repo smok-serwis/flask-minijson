@@ -11,6 +11,8 @@ class TestMiniJSON(unittest.TestCase):
 
     def test_minijson(self):
         data = minijson.dumps({'1': '2'})
+        resp = self.client.post('/v1', data=data, headers={'Content-Type': 'application/x-minijson'})
+        self.assertEqual(resp.get_json(), {'status': 'ok'})
         resp = self.client.post('/v1', data=data, headers={'Content-Type': 'application/minijson'})
         self.assertEqual(resp.get_json(), {'status': 'ok'})
         resp = self.client.post('/v1', json={'1': '3'})

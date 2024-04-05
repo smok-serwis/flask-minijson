@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 
     # Python
     apt-get install -y htop curl python3-pip build-essential python3 python3-setuptools
-    sudo pip3 install --upgrade pip setuptools
+    sudo pip3 install --upgrade pip setuptools Cython
 
     # Install deps
     sudo pip3 install -r /vagrant/requirements.txt

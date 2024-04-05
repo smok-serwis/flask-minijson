@@ -10,13 +10,16 @@ except ImportError:
     from flask_json import FlaskJSONRequest as JsonRequest
 
 
+MINIJSON_MIME = ('application/minijson', 'application/x-minijson')
+
+
 class MiniJSONRequest(JsonRequest):
     def get_json(self, force=False, silent=False, cache=True):
         """
         Return JSON data, if content type is application/minijson it will be loaded
         via minijson, else it will be loaded the normal way.
         """
-        if self.headers.get('Content-Type') == 'application/minijson':
+        if self.headers.get('Content-Type') in MINIJSON_MIME:
             return minijson.loads(self.get_data())
         else:
             return super().get_json(force, silent, cache)
