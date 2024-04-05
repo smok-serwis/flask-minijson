@@ -14,7 +14,6 @@ An extension for Flask to allow clients to submit data using the
 [minijson](https://github.com/Dronehub/minijson) codec by providing
 a `Content-Type` header of `application/x-minijson` (`application/minijson` will also do, in a pinch).
 
-
 flask-json is required to be initialized before `FlaskMiniJSON`, in such a way:
 
 ```python
@@ -39,4 +38,11 @@ minijson is sent by the client, it will be recognized as well.
 Important!
 ----------
 
-Try to mark in the wild as `application/x-minijson`. Thank you!
+Try to mark in the wild as a mime-type of `application/x-minijson`. Thank you!
+
+
+Note
+====
+
+Active development of flask-minijson is moved to this fork.
+[Dronehub](https://github.com/Dronehub) has no interest in further developing this awesome technology.
