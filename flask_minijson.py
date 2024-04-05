@@ -2,7 +2,12 @@ import typing as tp
 
 import minijson
 from flask import Flask
-from flask_json import JsonRequest
+
+try:
+    from flask_json import JsonRequest
+except ImportError:
+    # we must be running on a newer version of Flask-JSON
+    from flask_json import FlaskJSONRequest as JsonRequest
 
 
 class MiniJSONRequest(JsonRequest):
